@@ -144,8 +144,152 @@ hr {
     border-radius: 10px;
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:768px) {
 
+    * {
+        margin: 0;
+        padding: 0;
+    }
     
+    body {
+        font-family:'Courier New', Courier, monospace;
+    }
+    
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .nav ul {
+        display: flex;
+        list-style: none;
+    }
+    
+    .nav ul li {
+        padding: 10px;
+    }
+    
+    .nav ul li a {
+        text-decoration: none;
+        color: black;
+        font-weight: 1000;
+    }
+    
+    .banner {
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1rem;
+    }
+    
+    .title {
+        font-size: 1rem;
+        font-weight: 1000;
+    }
+    
+    .resume {
+        width: 60%;
+        font-weight: 600;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .btn-primary {
+        background-color: #ff6464;
+        color: white;
+        border: none;
+        padding: 10px;
+        text-transform: uppercase;
+        font-size: 10px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    
+    .btn-primary:hover {
+        background-color: yellow;
+        color: black;
+        font-weight: bold;
+    }
+    
+    .img-profile {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+    }
+    
+    .section-works {
+        max-width: 400px;
+        margin: auto;
+    }
+    
+    .card {
+        display: flex;
+    }
+    
+    .card div img {
+        width: 150px;
+        height: 170px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin: 3px;
+        border: solid 2px;
+        box-shadow: 0 10px 20px;
+    }
+    
+    .text-works {
+        font-size: 1em;
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+    
+    .container-detail {
+        margin-left: 20px;
+    }
+    
+    .container-detail p {
+        margin-top: 20px;
+        width: 100%;
+    }
+    
+    .label-dark {
+        background-color: #142850;
+        color: white;
+        border-radius: 16px;
+        padding: 3px 8px;
+        font-weight: bold;
+    }
+    
+    .text-light {
+        color: #8695a4;
+    }
+    
+    hr {
+        height: 0.2px;
+        background-color: #ff6464;
+        border: 0.5px solid #ff6464;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    
+    .link-portafolio {
+        color: black;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    
+    .link-portafolio:hover {
+        color: #ff6464;
+        text-decoration: underline;
+    }
+    
+    .footer {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+        padding: 10px;
+        border: solid 1px gray;
+        border-radius: 10px;
+    }
 
 }
