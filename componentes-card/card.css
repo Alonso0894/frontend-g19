@@ -1,0 +1,80 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background: #212123;
+    margin: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-giratorio {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+}
+
+.card-giratorio-contenido {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card-giratorio:hover .card-giratorio-contenido {
+    transform: rotateY(180deg);
+}
+
+.card-giratorio-contenido-frente, 
+.card-giratorio-contenido-trasero {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-giratorio-contenido-frente {
+    /*background: linear-gradient(-229deg,#0093E9,#80D0C7);*/
+    background-image: url(./img/administracion-de-empresas-992x661.jpeg);
+    border: solid aquamarine 2px;
+    background-size: 100% 100%;
+}
+
+.card-giratorio-contenido-trasero {
+    /*background: linear-gradient(-229deg,#0093E9,#80D0C7);*/
+    background-image: url(./img/administracion-de-empresas-992x661.jpeg);
+    border: solid aquamarine 2px;
+    background-size: 100% 100%; 
+    color:aquamarine;
+    font-style: oblique;
+    transform: rotateY(180deg);
+}
+
+.card-giratorio-contenido h1,
+.card-giratorio-contenido p {
+    margin: 0;
+    text-shadow: 0 0 10px #000;
+}
+
+.card-giratorio-contenido h1 {
+    font-size: 1.4rem;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    filter: drop-shadow(2px 2px 5px #000);
+    border-radius: 50%;
+    border: solid aquamarine 1px;
+}
