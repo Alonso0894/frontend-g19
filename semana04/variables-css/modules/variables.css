@@ -12,6 +12,8 @@
     --letter-color-4: green;
     --letter-color-5: red;
     --letter-color-6: aqua;
+    --fondo: blue;
+    --footer-border: 10px;
 }
 
 @media (min-width: 760px) {
@@ -19,7 +21,7 @@
         --padding-section: 2rem;
         --padding-container: 0.75rem;
         --max-width-container: 1024px;
-        --primary-theme-color: red;
+        --primary-theme-color: green;
         --letter-color-1: black;
         --letter-color-2: violet;
         --letter-color-3: aqua;
